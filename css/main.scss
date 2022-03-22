@@ -1,0 +1,206 @@
+@import 'parameters';
+
+// global
+body {
+  font-family: $rbt;
+  font-weight: $nml;
+  color: $dark;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent;
+}
+
+%align-center {
+  display: flex;
+  align-items: center;
+}
+
+.home {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: auto;
+    height: 100vh !important;
+}
+
+.hero {
+    background-image: url('../img/back1.webp');
+    background-size: cover;
+    &.employee {
+        background-image: url('../img/back2.webp');
+        background-size: cover;
+    }
+}
+.form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &_container {
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between !important;
+        align-items: center;
+        &-logo{
+            filter: invert(1);
+            margin: auto;
+            img {
+                height: 5em;
+            }
+        }
+        &-form {
+            margin: auto;
+            width: 100%;
+            div{
+                @extend %align-center;
+                align-items: baseline !important;
+                justify-content: space-between;
+                & > div {
+                    @extend %align-center;
+                    flex-direction: column;
+                }
+            }
+            h2{
+                margin-top: 1.25rem;
+                text-align: center;
+                color: $gray;
+                span {
+                    color: $blue;
+                    font-weight: $lgt;
+                    &.employee{
+                        color: $purple;
+                    }
+                }
+            }
+            form{
+                margin-top: 1.25rem;
+                display: flex;
+                flex-direction: column;
+                label {
+                    font-weight: $smb;
+                    color: $gray;
+                    font-size: 0.8rem;
+                    margin-bottom: 0.5rem;
+                }
+                input {
+                    font-size: 1em;
+                    background-color: #f3f3f6;
+                    padding: 12px;
+                    border: none;
+                    padding-left: 1.2em;
+                    border-radius: 10px;
+                    margin-bottom: 1em;
+                    transition: all 0.2s ease-in-out;
+                    &::placeholder {
+                        opacity: 0.8;
+                    }
+                    &:hover{
+                        background-color: #f0f0f0;
+                    }
+                    &:focus{
+                        outline: none;
+                        box-shadow: rgba(172, 172, 172, 0.2) 2px 2px 4px 0px inset, rgba(255, 255, 255, 0.1) -2px -2px 4px 1px inset;
+                        color: $blue;
+                        background-color: #f3f3f6;
+                    }
+                }
+                a{
+                    text-align: end;
+                    font-size: 1em;
+                    color: $blue;
+                    cursor: pointer;
+                    text-decoration: none;
+                    transition: all 0.2s ease-in-out;
+                    &:hover {
+                        color: $green;
+                    }
+                    &.employee{
+                        color: $green;
+                        &:hover{
+                            color: $purple;
+                        }
+                    }
+                }
+            }
+        }
+        button{
+            width: 100%;
+            font-family: $rbt;
+            font-size: 1.2em;
+            font-weight: $mdm;
+            padding: 15px;
+            border-radius: 10px;
+            border: none;
+            margin-top: 20px;
+            color: $light;
+            cursor: pointer;
+            transition: all 0.2s ease-in-out;
+            &#login{
+                background-color: $blue;
+                border: none;
+                &:hover{
+                    background-color: #164abd;
+                }
+            }
+            &#modal_opener{
+                background-color: $green;
+                border: none;
+                margin-top: auto !important;
+                margin-bottom: 1rem;
+                &:hover{
+                    background-color: #008d6e;
+                }
+            }
+            &.employee{
+                background-color: $purple;
+                &:hover{
+                    background-color: #7140f8;
+                }
+            }
+        }
+        hr{
+            margin: 1rem 0;
+            color: inherit;
+            background-color: currentColor;
+            opacity: .50;
+        }
+        a{
+            text-align: end;
+            font-size: 1em;
+            color: $blue;
+            cursor: pointer;
+            text-decoration: none;
+            transition: all 0.2s ease-in-out;
+            &:hover {
+                color: $green;
+            }
+            &.employee{
+                color: $green;
+                &:hover{
+                    color: $purple;
+                }
+            }
+        }
+    }
+    &_button{
+        position: absolute;
+        left: 33vw;
+        padding: 15px;
+        background: $green;
+        height: 100vh;
+        writing-mode: vertical-lr;
+        text-align: center;
+        color: $light;
+        font-size: 1.2rem;
+        font-weight: $bld;
+        cursor: pointer;
+        transition: all 0.2s ease-in-out;
+        &:hover{
+            background-color: #008d6e;
+        }
+    }
+
+}

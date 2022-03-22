@@ -1,0 +1,293 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+body {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  color: #212529;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.form_container-form div, .form_container-form div > div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.home {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 2fr;
+      grid-template-columns: 1fr 2fr;
+  -ms-grid-rows: auto;
+      grid-template-rows: auto;
+  height: 100vh !important;
+}
+
+.hero {
+  background-image: url("../img/back1.webp");
+  background-size: cover;
+}
+
+.hero.employee {
+  background-image: url("../img/back2.webp");
+  background-size: cover;
+}
+
+.form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.form_container {
+  width: 80%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify !important;
+      -ms-flex-pack: justify !important;
+          justify-content: space-between !important;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.form_container-logo {
+  -webkit-filter: invert(1);
+          filter: invert(1);
+  margin: auto;
+}
+
+.form_container-logo img {
+  height: 5em;
+}
+
+.form_container-form {
+  margin: auto;
+  width: 100%;
+}
+
+.form_container-form div {
+  -webkit-box-align: baseline !important;
+      -ms-flex-align: baseline !important;
+          align-items: baseline !important;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.form_container-form div > div {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.form_container-form h2 {
+  margin-top: 1.25rem;
+  text-align: center;
+  color: #525252;
+}
+
+.form_container-form h2 span {
+  color: #1b63ff;
+  font-weight: 300;
+}
+
+.form_container-form h2 span.employee {
+  color: #581bff;
+}
+
+.form_container-form form {
+  margin-top: 1.25rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.form_container-form form label {
+  font-weight: 600;
+  color: #525252;
+  font-size: 0.8rem;
+  margin-bottom: 0.5rem;
+}
+
+.form_container-form form input {
+  font-size: 1em;
+  background-color: #f3f3f6;
+  padding: 12px;
+  border: none;
+  padding-left: 1.2em;
+  border-radius: 10px;
+  margin-bottom: 1em;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+.form_container-form form input::-webkit-input-placeholder {
+  opacity: 0.8;
+}
+
+.form_container-form form input:-ms-input-placeholder {
+  opacity: 0.8;
+}
+
+.form_container-form form input::-ms-input-placeholder {
+  opacity: 0.8;
+}
+
+.form_container-form form input::placeholder {
+  opacity: 0.8;
+}
+
+.form_container-form form input:hover {
+  background-color: #f0f0f0;
+}
+
+.form_container-form form input:focus {
+  outline: none;
+  -webkit-box-shadow: rgba(172, 172, 172, 0.2) 2px 2px 4px 0px inset, rgba(255, 255, 255, 0.1) -2px -2px 4px 1px inset;
+          box-shadow: rgba(172, 172, 172, 0.2) 2px 2px 4px 0px inset, rgba(255, 255, 255, 0.1) -2px -2px 4px 1px inset;
+  color: #1b63ff;
+  background-color: #f3f3f6;
+}
+
+.form_container-form form a {
+  text-align: end;
+  font-size: 1em;
+  color: #1b63ff;
+  cursor: pointer;
+  text-decoration: none;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+.form_container-form form a:hover {
+  color: #04ba92;
+}
+
+.form_container-form form a.employee {
+  color: #04ba92;
+}
+
+.form_container-form form a.employee:hover {
+  color: #581bff;
+}
+
+.form_container button {
+  width: 100%;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.2em;
+  font-weight: 500;
+  padding: 15px;
+  border-radius: 10px;
+  border: none;
+  margin-top: 20px;
+  color: #ececec;
+  cursor: pointer;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+.form_container button#login {
+  background-color: #1b63ff;
+  border: none;
+}
+
+.form_container button#login:hover {
+  background-color: #164abd;
+}
+
+.form_container button#modal_opener {
+  background-color: #04ba92;
+  border: none;
+  margin-top: auto !important;
+  margin-bottom: 1rem;
+}
+
+.form_container button#modal_opener:hover {
+  background-color: #008d6e;
+}
+
+.form_container button.employee {
+  background-color: #581bff;
+}
+
+.form_container button.employee:hover {
+  background-color: #7140f8;
+}
+
+.form_container hr {
+  margin: 1rem 0;
+  color: inherit;
+  background-color: currentColor;
+  opacity: .50;
+}
+
+.form_container a {
+  text-align: end;
+  font-size: 1em;
+  color: #1b63ff;
+  cursor: pointer;
+  text-decoration: none;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+.form_container a:hover {
+  color: #04ba92;
+}
+
+.form_container a.employee {
+  color: #04ba92;
+}
+
+.form_container a.employee:hover {
+  color: #581bff;
+}
+
+.form_button {
+  position: absolute;
+  left: 33vw;
+  padding: 15px;
+  background: #04ba92;
+  height: 100vh;
+  -webkit-writing-mode: vertical-lr;
+      -ms-writing-mode: tb-lr;
+          writing-mode: vertical-lr;
+  text-align: center;
+  color: #ececec;
+  font-size: 1.2rem;
+  font-weight: 700;
+  cursor: pointer;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+.form_button:hover {
+  background-color: #008d6e;
+}
+/*# sourceMappingURL=main.css.map */

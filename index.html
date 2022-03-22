@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+    <title>Acceso || Bioprotece</title>
+</head>
+<body>
+    <main>
+        <div class="home">
+            <div class="form" id="form">
+                <div class="form_container">
+                    <div class="form_container-logo">
+                        <img src="img/logo-header3.webp" alt="Logo Bioprotece">
+                    </div>
+                    <div class="form_container-form">
+                        <h2> <span>Clientes</span> | Acceder</h2>
+                        <form>
+                            <label for="email">Email</label>
+                            <input type="email" name="email" id="email" placeholder="aaaa@123.com" required>
+                            <label for="pass">Contraseña</label>
+                            <input type="password" name="pass" id="pass" placeholder="********" required>
+                            <a>Olvidé mi contraseña</a>
+                        </form>
+                        <a href="/home.html"><button id="login">Iniciar sesión</button></a>
+                        <hr>
+                        <button id="modal_opener">Registrarse</button>
+                        <a href="./accesoempleado.html"><p>Soy empleado</p></a>
+                    </div>
+                </div> 
+                <!--<canvas id="canvas1" class="hidden-sm hidden-xs" width="1263" height="890"></canvas>-->      
+            </div>
+            <div class="form" id="firstModal" style="display: none;">
+                <div class="form_container">
+                    <div class="form_container-logo">
+                        <img src="img/logo-header3.webp" alt="Logo Bioprotece">
+                    </div>
+                    <div class="form_container-form">
+                        <h2> <span>Clientes</span> | Registrarse</h2>
+                        <form>
+                            <div>
+                                <div>
+                                    <label for="name">Nombre</label>
+                                    <input type="text" name="name" id="name" placeholder="Manuel" required>
+                                </div>
+                                <div>
+                                    <label for="surname">Apellido</label>
+                                    <input type="text" name="surname" id="surname" placeholder="Nelson" required>
+                                </div>
+                            </div>
+                            <label for="email">Email</label>
+                            <input type="email" name="email" id="email" placeholder="aaaa@123.com" required>
+                            <label for="pass">Contraseña</label>
+                            <input type="password" name="pass" id="pass" placeholder="********" required>
+                            <label for="pass">Repetir contraseña</label>
+                            <input type="password" name="pass" id="pass" placeholder="********" required>
+                        </form>
+                        <button>Registrarse</button>
+                    </div>
+                </div> 
+                <!--<canvas id="canvas1" class="hidden-sm hidden-xs" width="1263" height="890"></canvas>-->    
+                <div class="form_button" id="firstModal_button">
+                    Iniciar sesión
+                </div>  
+            </div>
+            <div class="hero"></div>
+        </div>
+    </main>
+    <script src="js/modal.js"></script>
+</body>
+</html>

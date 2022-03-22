@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+// colours
+$dark: #212529;
+$light: #ececec;
+$blue: #1b63ff;
+$darkblue: rgb(19, 72, 196);
+$green: #04ba92;
+$gray: #525252;
+$purple: #581bff;
+
+//fonts
+$rbt: "Roboto", sans-serif;
+$thn: 100;
+$xlt: 200;
+$lgt: 300;
+$nml: 400;
+$mdm: 500;
+$smb: 600;
+$bld: 700;
+
+//media queries
+@mixin tablet {
+  @media screen and (max-width: 768px) {
+      @content;
+  }
+}
+
+@mixin mobile {
+  @media screen and (max-width: 480px) {
+      @content;
+  }
+}
